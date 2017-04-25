@@ -16,4 +16,6 @@ docker run -i --rm \
 	$@
 ```
 
-And run with `sh container.sh mvn...|ember...`
+And run with `sh container.sh mvn...|ember...|npm...|git...|bower...`
+
+For example to test your ssh access in container run `sh container.sh ssh -T git@github.com`
