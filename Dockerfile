@@ -1,5 +1,7 @@
 FROM alpine:latest
 
+MAINTAINER Clairton Rodrigo Heinzen <clairton.rodrigo@gmail.com>
+
 RUN apk add --update openssh
 
 RUN apk add --update git
