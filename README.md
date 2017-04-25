@@ -12,9 +12,8 @@ docker run -i --rm \
 	-v $HOME/.ssh:/home/dev/.ssh:ro \
 	-v $PWD:/home/dev/${PWD##*/}:rw \
 	-w /home/dev/${PWD##*/} \
-	simulador \
+	clairton/alpine-maven-ember:v0.1.0 \
 	$@
-  
 ```
 
 And run with `sh container.sh mvn...|ember...`
