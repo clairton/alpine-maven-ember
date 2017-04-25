@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM openjdk:8-alpine
 
 MAINTAINER Clairton Rodrigo Heinzen <clairton.rodrigo@gmail.com>
 
