@@ -24,7 +24,8 @@ EXPOSE 9990 9990
 
 RUN adduser -s /bin/sh -D -u 1000 dev
 USER dev
-WORKDIR /home/dev
+ENV HOME /home/dev
+WORKDIR $HOME
 
 CMD ["/bin/bash"]
 
