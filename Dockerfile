@@ -4,13 +4,15 @@ MAINTAINER Clairton Rodrigo Heinzen <clairton.rodrigo@gmail.com>
 
 RUN apk add --update openssh
 
-RUN apk add git
+RUN apk add --update git
 
-RUN apk add bzip2
+RUN apk add --update bzip2
 
-RUN apk add nodejs
+RUN apk add --update nodejs
 
-RUN apk add maven
+RUN apk add --update maven
+
+RUN apk add --update ttf-dejavu
 
 RUN npm -g install bower
 
@@ -25,6 +27,8 @@ EXPOSE 9990 9990
 RUN adduser -s /bin/sh -D -u 1000 dev
 USER dev
 ENV HOME /home/dev
+ENV LC_CTYPE en_US.UTF-8
+ENV LANG en_US.UTF-8
 
 VOLUME /home/dev
 
